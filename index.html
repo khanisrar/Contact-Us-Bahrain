@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Contact</title>
+    <style>
+      .top_content {
+        color: #606060;
+        text-align: center;
+        /* background-color: #d70003; */
+        margin: 50px;
+        padding: 0 250px;
+      }
+
+      .top_content .content {
+        margin-top: 30px;
+      }
+      .top_content .content .fa {
+        font-size: 50px;
+      }
+      .form_container {
+        background-color: #d70003;
+        width: 100%;
+        height: auto;
+      }
+      .img_container {
+        background-image: url("images/bg_heading.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 275px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img_container img {
+        object-fit: cover;
+
+        width: 90%;
+      }
+      .contact_content {
+        width: 100%;
+        height: 54px;
+        background: #606060;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      .contact_content a {
+        color: #fff;
+        text-decoration: none;
+      }
+      /* .contact_content a .fa-whatsapp {
+        color: green;
+      } */
+      .contact_content .email {
+        margin-right: 25px;
+      }
+      .contact_content .email .fa {
+        margin-right: 5px;
+      }
+      .contact_content .number .fa {
+        margin-right: 5px;
+      }
+      .form_container {
+        padding: 20px;
+      }
+      .left_form {
+        /* background: green; */
+      }
+      .left_form input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      /* .right_form {
+        height: 100%;
+      } */
+      .right_form textarea {
+        width: 100%;
+        height: 100%;
+      }
+      select,
+      input,
+      textarea {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        color: #606060;
+        background: #fff;
+      }
+
+      .form_container button {
+        /* float: right; */
+        border: none;
+        color: #d70003;
+        /* margin-top: 20px; */
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 45%;
+        background: #fff;
+      }
+      .left_bottom_form {
+        display: flex;
+        justify-content: space-between;
+      }
+      .d_flex_2 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_bottom_form select,
+      input {
+        width: 45%;
+      }
+      .bottom_content .content {
+        border: 1px solid #d70003;
+        text-align: center;
+        padding: 10px;
+        color: #606060;
+        margin-top: 50px;
+      }
+
+      .bottom_content .content .fa {
+        position: relative;
+        top: -35px;
+        font-size: 50px;
+        background: #fff;
+        padding: 0 10px;
+        color: #d70003;
+      }
+      .bottom_content .content p {
+        font-size: 15px;
+      }
+      .bottom_content .content a {
+        text-decoration: none;
+      }
+      .bottom_content .content .email {
+        font-weight: bold;
+        color: #606060;
+      }
+      .bottom_content .content .site {
+        background: #d70003;
+        color: #fff;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 3px 10px;
+        border-radius: 5px;
+        position: relative;
+        bottom: -23px;
+      }
+      .d_flex {
+        display: flex;
+        flex-direction: row;
+      }
+      .big_none {
+        display: none;
+      }
+      @media (max-width: 1199px) {
+        .top_content {
+          color: #606060;
+          text-align: center;
+          margin: 50px;
+          padding: 0 200px;
+        }
+        .d_flex {
+          display: flex;
+          flex-direction: column;
+        }
+        .form_container {
+          width: 97vw;
+        }
+        .img_container {
+          height: 270px;
+          width: 97vw;
+        }
+        .contact_content {
+          width: 97vw;
+          height: 52px;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .top_content {
+          color: #606060;
+          text-align: center;
+          margin: 50px;
+          padding: 0 150px;
+        }
+      }
+      @media (max-width: 767px) {
+        /* .left_bottom_form {
+          display: flex;
+          flex-direction: column;
+        } */
+        .top_content {
+          color: #606060;
+          text-align: center;
+          margin: 50px;
+          padding: 0 20px;
+        }
+        .small_none {
+          display: none;
+        }
+        .big_none {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .form_container button {
+          margin-top: 20px;
+          float: right;
+          width: fit-content;
+          padding: 5px 25px;
+        }
+        .m_top_20 {
+          margin-top: 20px;
+        }
+        .form_container {
+          width: 95vw;
+        }
+        .img_container {
+          height: 270px;
+          width: 95vw;
+        }
+        .contact_content {
+          width: 95vw;
+          height: 52px;
+        }
+      }
+      @media (max-width: 575px) {
+        .contact_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+        }
+        .form_container {
+          width: 94vw;
+        }
+        .img_container {
+          height: 270px;
+          width: 94vw;
+        }
+        .contact_content {
+          width: 94vw;
+          height: 52px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="col-12">
+        <!-- <div class="col-9"> -->
+        <!-- <div class="container"> -->
+        <div class="top_content">
+          <p style="text-align: center">
+            We continuously work together with our customers and channel
+            partners to create innovative bakery solutions tailo#d70003 to meet
+            their changing needs and market demands.
+          </p>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="content">
+                <i class="fa fa-headphones"></i>
+                <p>Customer Support</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="content">
+                <i class="fa fa-desktop"></i>
+                <p>Request a Demo</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="content">
+                <i class="fa fa-comments-o"></i>
+                <p>Sales Inquiry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <div class="container-fluid">
+          <div class="col-12 d_flex">
+            <div class="col-6">
+              <div class="form_container">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="left_form">
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Organisation" />
+                        <input type="email" placeholder="Email ID" />
+                        <input type="number" placeholder="Mobile" />
+                      </div>
+                      <div class="left_bottom_form">
+                        <select name="cars" id="cars">
+                          <option value="volvo">Country</option>
+                          <option value="saab">India</option>
+                          <option value="mercedes">Pakistan</option>
+                          <option value="audi">China</option>
+                        </select>
+                        <input type="text" placeholder="City" />
+                        <!-- <input type="text" placeholder="Zip/Pincode" /> -->
+                      </div>
+                      <div class="d_flex_2">
+                        <input type="text" placeholder="Zip/Pincode" />
+                        <button class="small_none">Submit</button>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="right_form">
+                        <textarea
+                          rows="14"
+                          class="m_top_20"
+                          name=""
+                          id=""
+                          placeholder="Your Message"></textarea>
+                      </div>
+                      <button class="big_none">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img_container">
+                <img src="./images/about_banner.png" alt="" />
+              </div>
+              <div class="contact_content">
+                <div class="email">
+                  <a href="mailto:support@swissbake.bh" target="_blank">
+                    <i class="fa fa-envelope"></i>support@swissbake.bh</a
+                  >
+                </div>
+                <div class="number">
+                  <a href="tel:+973 35376746" target="_blank">
+                    <i class="fa fa-phone"></i
+                  ></a>
+
+                  <a href="https://wa.me/+973 35376746" target="_blank"
+                    ><i class="fa fa-whatsapp"></i>+973 35376746</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="bottom_content my-5">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="content">
+                    <i class="fa fa-map-marker"></i>
+                    <h4>MIDDLE EAST</h4>
+                    <p>
+                      Building 2356, Road 1532, Block 115, Town: HIDD, Muharraq
+                      Municipality, The Kingdom of Bahrain.
+                    </p>
+                    <a
+                      href="mailto:support@swissbake.bh"
+                      target="_blank"
+                      class="email"
+                      >support@swissbake.bh</a
+                    >
+                    <br />
+                    <a
+                      href="https://www.swissbake.bh/"
+                      target="_blank"
+                      class="site"
+                      >www.swissbake.bh</a
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="content">
+                    <i class="fa fa-globe"></i>
+                    <h4>UK & EUROPEAN UNION</h4>
+                    <p>
+                      Junkerschlossweg 9, 4465 Hemmiken Basel-Landschaft,
+                      SWITZERLAND.
+                    </p>
+                    <a
+                      href="mailto:support@swissbake.ch"
+                      target="_blank"
+                      class="email"
+                      >support@swissbake.ch</a
+                    >
+                    <br />
+                    <a
+                      href="https://www.swissbake.ch/"
+                      target="_blank"
+                      class="site"
+                      >www.swissbake.ch</a
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="content">
+                    <i class="fa fa-thumb-tack"></i>
+                    <h4>ASIA</h4>
+                    <p>
+                      G-10, Manjrekar Lane, Dr.E.Moses Road, Worli, Mumbai
+                      Maharashtra, INDIA.
+                    </p>
+                    <a
+                      href="mailto:support@swissbake.in"
+                      target="_blank"
+                      class="email"
+                      >support@swissbake.in</a
+                    >
+                    <br />
+                    <a
+                      href="https://www.swissbake.in/"
+                      target="_blank"
+                      class="site"
+                      >www.swissbake.in</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
